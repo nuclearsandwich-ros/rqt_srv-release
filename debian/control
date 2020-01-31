@@ -1,0 +1,13 @@
+Source: ros-turbulent-rqt-srv
+Section: misc
+Priority: extra
+Maintainer: Dirk Thomas <dthomas@osrfoundation.org>
+Build-Depends: debhelper (>= 9.0.0), ros-turbulent-ament-cmake, ros-turbulent-ros-workspace
+Homepage: http://wiki.ros.org/rqt_srv
+Standards-Version: 3.9.2
+
+Package: ros-turbulent-rqt-srv
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-turbulent-rclpy, ros-turbulent-rqt-gui, ros-turbulent-rqt-gui-py, ros-turbulent-rqt-msg, ros-turbulent-ros-workspace
+Description: A Python GUI plugin for introspecting available ROS message types.
+ Note that the srvs available through this plugin is the ones that are stored on your machine, not on the ROS core your rqt instance connects to.
