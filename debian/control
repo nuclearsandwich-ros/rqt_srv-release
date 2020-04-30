@@ -1,0 +1,13 @@
+Source: ros-verystable-rqt-srv
+Section: misc
+Priority: optional
+Maintainer: Dirk Thomas <dthomas@osrfoundation.org>
+Build-Depends: debhelper (>= 9.0.0), ros-verystable-ament-cmake, ros-verystable-ros-workspace
+Homepage: http://wiki.ros.org/rqt_srv
+Standards-Version: 3.9.2
+
+Package: ros-verystable-rqt-srv
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-verystable-rclpy, ros-verystable-rqt-gui, ros-verystable-rqt-gui-py, ros-verystable-rqt-msg, ros-verystable-ros-workspace
+Description: A Python GUI plugin for introspecting available ROS message types.
+ Note that the srvs available through this plugin is the ones that are stored on your machine, not on the ROS core your rqt instance connects to.
